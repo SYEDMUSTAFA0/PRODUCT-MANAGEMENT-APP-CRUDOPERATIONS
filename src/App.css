@@ -1,0 +1,238 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+/* crud operations */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9fafc;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.product-form {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.product-form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.btn {
+  padding: 10px 16px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn.primary {
+  background: #4cafef;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #369cdb;
+}
+
+.btn.secondary {
+  background: #ffe082;
+  color: #333;
+}
+
+.btn.secondary:hover {
+  background: #ffd54f;
+}
+
+.btn.danger {
+  background: #ef5350;
+  color: white;
+  margin-top: 10px;
+}
+
+.btn.danger:hover {
+  background: #d32f2f;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+  font-size: 2rem;
+}
+
+/* Form Styles */
+.product-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.product-form input {
+  padding: 0.7rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  flex: 1 1 200px;
+  transition: 0.3s;
+}
+
+.product-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.primary {
+  background: #007bff;
+  color: white;
+}
+
+.secondary {
+  background: #6c757d;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.danger {
+  background: #dc3545;
+  color: white;
+  margin-top: 1rem;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Card Styles */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #007bff;
+}
+
+.card .price {
+  font-weight: bold;
+  color: #28a745;
+  margin-bottom: 0.5rem;
+}
+
+.card .category {
+  font-size: 0.85rem;
+  color: #555;
+  background: #f0f0f0;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  align-self: flex-start;
+  margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-form {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
