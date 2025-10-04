@@ -11,7 +11,7 @@ Currently, two official plugins are available:
 
 The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## create a frontend folder and add all packages inside that and extract zip u wi
+## create a frontend folder and add all packages inside that and extract backend.zip then copy the commands and run
 
 cd frontend && npm install
 cd backend && npm install
